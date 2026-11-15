@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E12"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="MPV Player"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="libmpv · 原生画质"
+        android:textColor="#9A8CFF"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:text="打开本地视频" />
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="粘贴 http(s) / m3u8 / smb 链接"
+        android:inputType="textUri"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#777777" />
+
+    <Button
+        android:id="@+id/btnPlayUrl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:text="播放链接" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="画质预设"
+        android:textColor="#AAAAAA" />
+
+    <RadioGroup
+        android:id="@+id/rgQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbFast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbBalanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="均衡"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="高质量"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+</LinearLayout>
